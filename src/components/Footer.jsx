@@ -1,12 +1,13 @@
 import { faFigma, faXTwitter ,faFacebook, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import React from 'react'
 
 function Footer() {
   return (
     <>
-    <div style={{backgroundColor:"rgb(1, 1, 30)"}} className='p-4 text-white'>
+    <div  className='bg-gray-950 p-4 text-white'>
       <div className='md:grid grid-cols-3'>
         <div className='flex justify-center flex-col'>
           <h1 className='text-xl'>ABOUT US</h1>
@@ -35,6 +36,7 @@ function Footer() {
       </div>
 
     </div>
+    <div className='bg-black'><p className='text-center text-sm p-3 text-white'>Copyright © 2023 All rights reserved | This website is made with by <FontAwesomeIcon icon={faHeart} style={{color: "#FFD43B",}}/> Dhanya Anuraj</p></div>
     
     </>
   )
